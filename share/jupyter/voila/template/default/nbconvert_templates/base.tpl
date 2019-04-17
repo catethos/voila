@@ -8,10 +8,11 @@
 {%- block html_head -%}
 <meta charset="utf-8" />
 {% set nb_title = nb.metadata.get('title', '') or resources['metadata']['name'] %}
-<title>Voila: {{nb_title}}</title>
+<title>Pulsifi Demo</title>
 
 <link rel="stylesheet" href="https://unpkg.com/font-awesome@4.5.0/css/font-awesome.min.css" type="text/css" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
 {%- block html_head_js -%}
 
 <script src="{{resources.base_url}}voila/static/jquery.min.js"></script>
@@ -30,7 +31,7 @@
 {%- endblock html_head -%}
 </head>
 {%- endblock header -%}
-
+<h1> Pulsifi Demo </h1>
 
 {% block footer %}
 {% block footer_js %}
